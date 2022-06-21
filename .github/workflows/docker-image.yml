@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: "ghcr.io/${CI_REPOSITORY}"
+          images: "ghcr.io/${{ CI_REPOSITORY }}"
           tags: |
             type=sha,format=long
           flavor: |
@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v2 
         with:
           registry: ghcr.io
-          username: "${CI_REPOSITORY_OWNER}"
+          username: ${{ CI_REPOSITORY_OWNER }}
           password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Build and push
