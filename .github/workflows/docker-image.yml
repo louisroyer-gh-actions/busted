@@ -12,7 +12,8 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v3
-      - name: Docker meta
+      -
+        name: Docker meta
         id: meta
         use: docker/metadata-action@v4
         with:
