@@ -10,7 +10,7 @@ runs:
   image: docker://ghcr.io/louisroyer-gh-actions/busted:latest
   args:
     - ${{ inputs.args }}
-  branding:
-    icon: check
-    color: yellow
+branding:
+  icon: check
+  color: yellow
 
