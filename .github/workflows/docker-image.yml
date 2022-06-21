@@ -26,6 +26,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: .
+          push: ${{ github.ref == 'refs/heads/master' }}
           tags: |
             ghcr.io/${{ github.actor  }}/${{ secrets.GHCR_REPO }}:latest
           cache-from: type=gha
