@@ -1,4 +1,4 @@
-name: Busted
+name: louisroyer-gh-actions/busted
 description: Busted
 inputs:
   args:
