@@ -20,7 +20,7 @@ jobs:
         uses: docker/login-action@v2 
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
+          username: ${{ github.organization }}
           password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Build and push
@@ -29,7 +29,7 @@ jobs:
           context: .
           push: ${{ github.ref == 'refs/heads/master' }}
           tags: |
-            ghcr.io/${{ github.actor  }}/${{ secrets.GHCR_REPO }}:latest
+            ghcr.io/${{ github.organization  }}/${{ secrets.GHCR_REPO }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
