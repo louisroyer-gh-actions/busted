@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/${{ GHRC_OWNER }}/${{ GHRC_REPO }}
+          images: ghcr.io/${{ secrets.GHRC_OWNER }}/${{ secrets.GHRC_REPO }}
           tags: |
             type=sha,format=long
           flavor: |
@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v2 
         with:
           registry: ghcr.io
-          username: ${{ GHRC_OWNER }}
+          username: ${{ secrets.GHRC_OWNER }}
           password: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Build and push
