@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: "ghcr.io/${{ GHRC_OWNER }}/${{ GHRC_REPO }}"
+          images: ghcr.io/${{ GHRC_OWNER }}/${{ GHRC_REPO }}
           tags: |
             type=sha,format=long
           flavor: |
