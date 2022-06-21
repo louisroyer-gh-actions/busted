@@ -17,7 +17,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/$CI_REPOSITORY
+          images: "ghcr.io/${CI_REPOSITORY}"
           tags: |
             type=sha,format=long
           flavor: |
