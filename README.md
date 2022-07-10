@@ -8,3 +8,5 @@ Example workflow use:
       args: .
 
 ```
+
+Note: Code coverage analysis is *NOT* supported (luacov is not installed).
