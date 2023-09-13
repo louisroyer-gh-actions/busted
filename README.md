@@ -3,7 +3,7 @@
 Example workflow use:
 ```yaml
 - name: Run busted
-  uses: louisroyer-gh-actions/busted@v1.0.3
+  uses: louisroyer-gh-actions/busted@v1.0.4
   with:
       args: .
 
