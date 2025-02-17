@@ -1,4 +1,4 @@
-FROM alpine:3.21.2
+FROM alpine:3.21.3
 
 LABEL maintainer="Louis Royer <infos.louis.royer@gmail.com>" \
       org.opencontainers.image.authors="Louis Royer <infos.louis.royer@gmail.com>" \
