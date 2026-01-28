@@ -9,7 +9,7 @@ Versionning of this action is unrelated of the version of Busted actually used (
 Example workflow use:
 ```yaml
 - name: Run busted
-  uses: louisroyer-gh-actions/busted@v1.1.0
+  uses: louisroyer-gh-actions/busted@v1.1.1
   with:
       args: .
 ```
