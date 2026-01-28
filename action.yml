@@ -1,4 +1,4 @@
-name: louisroyer-gh-actions/busted
+name: Lua Busted (Alpine)
 description: Busted
 inputs:
   args:
@@ -11,6 +11,5 @@ runs:
   args:
     - ${{ inputs.args }}
 branding:
-  icon: check
-  color: yellow
-
+  icon: chevrons-up
+  color: blue
