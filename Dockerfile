@@ -1,10 +1,5 @@
 FROM alpine:3.23.3
 
-LABEL maintainer="Louis Royer <infos.louis.royer@gmail.com>" \
-      org.opencontainers.image.authors="Louis Royer <infos.louis.royer@gmail.com>" \
-      org.opencontainers.image.source="https://github.com/louisroyer-gh-actions/busted" \
-      org.opencontainers.image.title="Busted" \
-      org.opencontainers.image.description="A containerized version of Busted"
-RUN apk add --no-cache lua5.4-busted
+RUN apk add --no-cache --logfile=no lua5.4-busted
 
 ENTRYPOINT ["busted-5.4"]
