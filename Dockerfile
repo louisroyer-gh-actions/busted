@@ -1,5 +1,5 @@
-FROM alpine:3.23.4
+FROM alpine:3.24.1
 
-RUN apk add --no-cache --logfile=no lua5.4-busted
+RUN apk add --no-cache --logfile=no lua5.5-busted
 
-ENTRYPOINT ["busted-5.4"]
+ENTRYPOINT ["busted-5.5"]
