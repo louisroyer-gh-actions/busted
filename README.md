@@ -9,9 +9,7 @@ Versionning of this action is unrelated of the version of Busted actually used (
 Example workflow use:
 ```yaml
 - name: Run busted
-  uses: louisroyer-gh-actions/busted@v1.1.3
+  uses: louisroyer-gh-actions/busted@v1.2.0
   with:
       args: .
 ```
-
-Note: Code coverage analysis is *NOT* supported (luacov is not installed).
