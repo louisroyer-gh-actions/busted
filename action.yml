@@ -7,7 +7,7 @@ inputs:
     default: "."
 runs:
   using: docker
-  image: docker://ghcr.io/louisroyer-gh-actions/busted:1.2.0
+  image: docker://ghcr.io/louisroyer-gh-actions/busted:1.2.1
   args:
     - ${{ inputs.args }}
 branding:
