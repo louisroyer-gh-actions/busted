@@ -1,4 +1,4 @@
-FROM alpine:3.24.2
+FROM alpine:3.24.3
 
 RUN apk add --no-cache --logfile=no lua5.5-busted luacov
 

@@ -1,3 +1,4 @@
+---
 name: Lua Busted (Alpine)
 description: Busted
 inputs:
@@ -7,7 +8,7 @@ inputs:
     default: "."
 runs:
   using: docker
-  image: docker://ghcr.io/louisroyer-gh-actions/busted:1.2.1
+  image: docker://ghcr.io/louisroyer-gh-actions/busted:1.2.2
   args:
     - ${{ inputs.args }}
 branding:
